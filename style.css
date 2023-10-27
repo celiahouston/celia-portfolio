@@ -113,7 +113,8 @@ section p {
 }
 
 .work {
-  display: flex;  
+  display: flex; 
+  flex-direction: row; 
   margin: 10px;
   padding: 20px;
   background-color: var(--light-colour1);
@@ -129,8 +130,11 @@ section p {
 }
 
 .work-image { 
-  background-image: url("images/GitHubCat.png");
   height: 100px;
+}
+
+.work-image2 {
+height: 50px;
 }
 
 .work h3 {
