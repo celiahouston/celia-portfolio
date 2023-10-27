@@ -10,24 +10,27 @@
   }
   
   body {
-    display: inline-block; 
-    margin: 0;
-    padding: 0;
+    display: flex; 
+    flex-direction: column;
+    margin: 25px;
+    padding: 25px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
     font-size: 16px;
   }
   
 header {
+    display: flex;
     background-color: var(--dark-colour1);
     color: var(--light-colour1);
-    padding: 0px;
+    padding: 10px;
   }
 
 nav { 
-    display: inline-block; 
+    display: flex; 
     background-color: var(--dark-colour2);
     padding: 0px;
+    justify-content: flex-end;
 }
 
 nav a {
@@ -48,15 +51,32 @@ nav a {
   }
 
 .hero-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: var(--dark-colour1);
+  color: var(--light-colour1);
+  padding: 20px;
 }
 
 .page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--light-colour1);
 } 
 
+.page-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; 
+  background-color: var(--light-colour1);
+}
+
 .page-section.contact {
-  display: inline-block; 
+  display: flex; 
   background-color: var(--light-colour1); 
   color: var(--dark-colour2);
 }
@@ -75,7 +95,7 @@ nav a {
 }
 
 .work {
-  display: inline-block; 
+  display: flex;  
   margin: 10px;
   padding: 20px;
   background-color: var(--light-colour1);
@@ -89,20 +109,6 @@ nav a {
 .work-link {
   color: var(--dark-colour1);
 }
-
-/* .work-item {
-  display: inline-block;
-  width: 30%;
-  margin: 10px;
-  padding: 10px;
-  text-align: left;
-  background-color: var(--light-colour1);
-  border: 5px dashed var(--dark-colour1);
-} 
-
-.work-item:hover {
-  background-color: var(--dark-colour2);
-} */ 
 
 .work-image { 
   background-image: url("images/GitHubCat.png");
@@ -126,3 +132,18 @@ nav a {
     margin: 0;
   }
   
+  /*
+  @media only screen and (max-width: 1000px) {
+    #navigation {
+      display: none;
+    }
+    .icons {
+      margin-left: auto;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #headline {
+      position: static;
+      margin: 20px;
+    } */ 
