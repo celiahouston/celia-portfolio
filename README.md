@@ -1,4 +1,4 @@
-# celia-portfolio
+# Celia Houston Portfolio 
 This is a documentation file for the Unit 2 Challenge: Portfolio project, I completed during my coursework. In this challenge, I built a portfolio page to showcase my skills and talents, which I can continually update as the course progresses. A well-constructed portfolio is an essential tool for job seekers, as it not only highlights your best work but also demonstrates the thought processes behind it. Employers often seek candidates with portfolios that feature deployed web applications, making this project a valuable asset in my career search.
 
 ## Screencast 
