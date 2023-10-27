@@ -1,19 +1,55 @@
 * {
     box-sizing: border-box;
   }
+
+  :root {
+    --light-colour1: #87BBA2;
+    --light-colour2: #DEEEDF; 
+    --dark-colour1: #3B6064; 
+    --dark-colour2: #364958;
+  }
   
   body {
+    display:flex;
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
+    font-size: 16px;
   }
   
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
+  header{
+    background-color: var(--dark-colour1);
+    color: var(--light-colour1);
+    padding: 26px;
+  }
+
+nav { 
+    display: flex;
+    background-color: var(--dark-colour2);
+    padding: 13px;
+}
+
+nav a {
+    color: var(--dark-blue);
+    padding: 13px; 
+    text-decoration: none;
+    text-align: right;
+  }
+  
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+
+
   h6 {
     margin: 0;
   }
