@@ -7,6 +7,7 @@
     --light-colour2: #DEEEDF; 
     --dark-colour1: #3B6064; 
     --dark-colour2: #364958;
+    --background-colour: #C9E4CA; 
   }
   
   body {
@@ -18,6 +19,17 @@
     line-height: 1.5;
     font-size: 16px;
   }
+
+  main {
+    display: flex; 
+    flex-direction: column;
+    background-color: var(--background-colour);
+    padding: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  
   
 header {
     display: flex;
@@ -54,20 +66,19 @@ nav a {
   }
   
   h1 {
-    font-size: 2.5rem;
+    font-size: 52px;
     margin-bottom: 5px;
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 36px;
     margin-bottom: 10px;
   }
 
 .hero-banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: flex;  
+  justify-content: right; 
+  align-items: right; 
   background-color: var(--dark-colour1);
   color: var(--light-colour1);
   padding: 20px;
@@ -83,6 +94,12 @@ nav a {
 section p {
   align-items: center;
   color: var(--dark-colour2);
+  line-height: 2;
+}
+
+.work.large-box {
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 .page-section {
@@ -112,13 +129,42 @@ section p {
   color: red;
 }
 
+.contact-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around; 
+  list-style: none;
+  padding: 0px;
+}
+
+.contact-list li {
+  text-align: center;
+  margin: 5px; 
+}
+
+.contact-list a { 
+  text-decoration: none;
+  color: var(--dark-colour1);
+}
+
+.contact-list a:hover {
+  color: red;
+}
+
 .work {
-  display: flex; 
-  flex-direction: row; 
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 600px;
   margin: 10px;
-  padding: 20px;
+  padding: 10px;
   background-color: var(--light-colour1);
   border: 3px dashed var(--dark-colour1);
+}
+
+.work:nth-child(1) {
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 .work:hover {
@@ -131,10 +177,32 @@ section p {
 
 .work-image { 
   height: 100px;
+  width: 100px;
+}
+
+.work-image1 { 
+  height: 100px;
+  width: 100px;
 }
 
 .work-image2 {
-height: 50px;
+  height: 75px;
+  width: auto;
+}
+
+.work-image3 {
+  height: 75px;
+  width: auto;
+}
+
+.work-image4 {
+  height: 75px;
+  width: auto;
+}
+
+.work-image5 {
+  height: 75px;
+  width: auto;
 }
 
 .work h3 {
