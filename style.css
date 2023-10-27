@@ -21,6 +21,8 @@
   
 header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--dark-colour1);
     color: var(--light-colour1);
     padding: 10px;
@@ -28,13 +30,24 @@ header {
 
 nav { 
     display: flex; 
-    background-color: var(--dark-colour2);
+    background-color: var(--dark-colour1);
     padding: 0px;
     justify-content: flex-end;
 }
 
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline; 
+  margin: 0 10px;
+}
+
 nav a {
-    color: var(--dark-colour1);
+    color: var(--light-colour2);
     padding: 0px; 
     text-decoration: none;
     text-align: right;
@@ -66,6 +79,11 @@ nav a {
   align-items: center;
   background-color: var(--light-colour1);
 } 
+
+section p {
+  align-items: center;
+  color: var(--dark-colour2);
+}
 
 .page-section {
   display: flex;
