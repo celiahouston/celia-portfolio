@@ -70,9 +70,17 @@ nav a {
     margin-bottom: 5px;
   }
 
+  h1:hover {
+    color: var(--light-colour2);
+  }
+
   h2 {
     font-size: 36px;
     margin-bottom: 10px;
+  }
+
+  h2:hover {
+    color: var(--light-colour2);
   }
 
 .hero-banner {
