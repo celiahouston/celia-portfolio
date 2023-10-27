@@ -10,7 +10,7 @@
   }
   
   body {
-    display:flex;
+    display: inline-block; 
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -18,29 +18,28 @@
     font-size: 16px;
   }
   
-  header{
+header {
     background-color: var(--dark-colour1);
     color: var(--light-colour1);
-    padding: 26px;
+    padding: 0px;
   }
 
 nav { 
-    display: flex;
+    display: inline-block; 
     background-color: var(--dark-colour2);
-    padding: 13px;
+    padding: 0px;
 }
 
 nav a {
-    color: var(--dark-blue);
-    padding: 13px; 
+    color: var(--dark-colour1);
+    padding: 0px; 
     text-decoration: none;
     text-align: right;
   }
   
-
   h1 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   h2 {
@@ -48,7 +47,76 @@ nav a {
     margin-bottom: 10px;
   }
 
+.hero-banner {
+  background-color: var(--dark-colour1);
+}
 
+.page-wrapper {
+  background-color: var(--light-colour1);
+} 
+
+.page-section.contact {
+  display: inline-block; 
+  background-color: var(--light-colour1); 
+  color: var(--dark-colour2);
+}
+
+.page-section.contact li {
+  color: var(--dark-colour2);
+}
+
+.page-section.contact a {
+  text-decoration: none;
+  color: var(--dark-colour1);
+}
+
+.page-section.contact a:hover {
+  color: red;
+}
+
+.work {
+  display: inline-block; 
+  margin: 10px;
+  padding: 20px;
+  background-color: var(--light-colour1);
+  border: 3px dashed var(--dark-colour1);
+}
+
+.work:hover {
+  background-color: var(--dark-colour1);
+}
+
+.work-link {
+  color: var(--dark-colour1);
+}
+
+/* .work-item {
+  display: inline-block;
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+  text-align: left;
+  background-color: var(--light-colour1);
+  border: 5px dashed var(--dark-colour1);
+} 
+
+.work-item:hover {
+  background-color: var(--dark-colour2);
+} */ 
+
+.work-image { 
+  background-image: url("images/GitHubCat.png");
+  height: 100px;
+}
+
+.work h3 {
+  font-size: 15px;
+  color: white;
+}
+
+.work p {
+  font-size: 13px;
+}
 
   h6 {
     margin: 0;
