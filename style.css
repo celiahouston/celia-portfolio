@@ -91,7 +91,7 @@ nav a {
 
 .workGridArea { 
   gap: 1em;  
-  max-width: 350px;
+  max-width: auto;
   max-height: auto; 
   margin: 1em;
   padding: 1em;
