@@ -52,7 +52,7 @@ nav a {
   }
   
   h1 {
-    font-size: 2em; 
+    font-size: 2.5em; 
     margin-bottom: 2em; 
   }
 
@@ -105,7 +105,7 @@ nav a {
 
 #firstWork {
   grid-area: firstWork;
-  background-image: url(images/GitHubCat.png)
+  background-image: url(images/GitHubCat.png);
 }
 
 #seoWork {
@@ -120,30 +120,17 @@ nav a {
 
 #deployedSite {
   grid-area: deployedSite;
-  background-image: url(images/HTML.png);
+  background-image: url(images/ledWall.png);
 }
 
 #portfolioRepo  {
   grid-area: portfolioRepo;
-  background-image: url(images/computer-image.png);
+  background-image: url(images/coding.png);
 }
 
-.work:hover {
+.workGridArea:hover {
   background-color: var(--dark-colour1);
-}
-
-.work-link {
-  color: var(--dark-colour1);
-}
- 
-.work-image1 { 
-  height: 100px;
-  width: auto; 
-}
-
-.work-image2 {
-  height: 75px;
-  width: auto;
+  opacity: 50%;
 }
 
 .workGrid h3 {
@@ -184,12 +171,6 @@ nav a {
 } 
 
   @media only screen and (max-width: 1000px) {
-    #navigation {
-      display: none;
-    }
-    .icons {
-      margin-left: auto;
-    }
     h1  {
       font-size: 1em;
       margin-bottom: 1em;
@@ -206,10 +187,6 @@ nav a {
   
   
   @media only screen and (max-width: 1000px) {
-    headline {
-      position: static;
-      margin: 1em;
-    }
     h1 {
       font-size: 0.8em;
       margin-bottom: 0.5em;
@@ -224,7 +201,7 @@ nav a {
     }
   }
 
-    @media only screen and (max-width: 600px) 
+    @media only screen and (max-width: 600px) {
     h1 {
       font-size: 0.8em;
       margin-bottom: 0.5em;
@@ -232,5 +209,11 @@ nav a {
     h2  {
       font-size: 0.6em;
       margin-bottom: 0.5em;
-    }   
+    } 
+      .work  {
+        margin: 0.15em;
+        padding: 0.15em;
+      }
+    } 
+
    
