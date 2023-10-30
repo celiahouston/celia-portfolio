@@ -27,6 +27,7 @@
     font-size: 1em;
   }
   
+  
 header {
     display: flex;
     justify-content: space-between;
@@ -84,23 +85,14 @@ nav a {
   background-color: var(--dark-colour1);
   color: var(--light-colour1);
   padding: 1em; 
-}
-
-.page-section.contact {
-
-  color: var(--dark-colour2); 
-}
-
-.page-section.contact a {
-  text-decoration: none;
-  color: var(--dark-colour1);
-}
+} 
 
 .page-section.contact a:hover {
   color: red;
 }
 
 .contact-list {
+  color: var(--dark-colour2); 
   width: 100%;
   display: flex;
   justify-content: space-around; 
@@ -160,6 +152,8 @@ nav a {
   font-size: 1em; 
 }
 
+/*
+
   @media only screen and (max-width: 1000px) {
     #navigation {
       display: none;
@@ -209,5 +203,5 @@ nav a {
     h2  {
       font-size: 0.6em;
       margin-bottom: 0.5em;
-    }
-  } 
+    }   
+    */ 
