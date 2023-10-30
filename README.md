@@ -7,9 +7,8 @@ Within the Screencast link below, I have shown the webpage and the webpage for S
 ## Screencast 
 https://watch.screencastify.com/v/nAwubez5jFemxfsXDuxl 
 
-## Screenshot
-
 ## Deployable URl 
+https://celiahouston.github.io/celia-portfolio/ 
 
 ## License 
 Please refer to the LICENSE in the repo.
