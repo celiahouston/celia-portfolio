@@ -11,25 +11,21 @@
   }
   
   body {
-    display: flex; 
-    flex-direction: column;
     margin: 1em;
     padding: 2em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
     font-size: 1em;
+    background-color: var(--background-colour);
   }
 
   main {
-    display: flex; 
-    flex-direction: column;
     background-color: var(--background-colour);
     padding: 2em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
     font-size: 1em;
   }
-  
   
 header {
     display: flex;
@@ -60,9 +56,7 @@ nav li {
 
 nav a {
     color: var(--light-colour2);
-    padding: 0em; 
     text-decoration: none;
-    text-align: right;
   }
   
   h1 {
@@ -92,40 +86,9 @@ nav a {
   padding: 1em; 
 }
 
-.page-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--light-colour1);
-} 
-
-section p {
-  align-items: center;
-  color: var(--dark-colour2);
-  line-height: 2;
-}
-
-.work.large-box {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-
-.page-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1em; 
-  background-color: var(--light-colour1);
-}
-
 .page-section.contact {
-  display: flex; 
-  background-color: var(--light-colour1); 
-  color: var(--dark-colour2);
-}
 
-.page-section.contact li {
-  color: var(--dark-colour2);
+  color: var(--dark-colour2); 
 }
 
 .page-section.contact a {
@@ -170,11 +133,6 @@ section p {
   border: 3px dashed var(--dark-colour1);
 }
 
-.work:nth-child(1) {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-
 .work:hover {
   background-color: var(--dark-colour1);
 }
@@ -182,33 +140,13 @@ section p {
 .work-link {
   color: var(--dark-colour1);
 }
-
-.work-image { 
-  height: 100px;
-  width: 100px;
-}
-
+ 
 .work-image1 { 
   height: 100px;
   width: 100px;
 }
 
 .work-image2 {
-  height: 75px;
-  width: auto;
-}
-
-.work-image3 {
-  height: 75px;
-  width: auto;
-}
-
-.work-image4 {
-  height: 75px;
-  width: auto;
-}
-
-.work-image5 {
   height: 75px;
   width: auto;
 }
@@ -221,15 +159,6 @@ section p {
 .work p {
   font-size: 1em; 
 }
-
-  h6 {
-    margin: 0;
-  }
-  
-  p {
-    margin: 0;
-  }
-  
 
   @media only screen and (max-width: 1000px) {
     #navigation {
@@ -253,7 +182,7 @@ section p {
   }
   
   
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1000px) {
     headline {
       position: static;
       margin: 1em;
@@ -272,21 +201,13 @@ section p {
     }
   }
 
-    @media only screen and (max-width: 768px) 
+    @media only screen and (max-width: 600px) 
     h1 {
-      font-size: 1em;
-      margin-bottom: 0.5em;
-    }
-    h2  {
       font-size: 0.8em;
       margin-bottom: 0.5em;
     }
-    @media only screen and (max-width: 769px) and (max-width: 1024px) {
-      h1 {
-        font-size: 1.2em;
-      }
-      h2  {
-        font-size: 1em;
-      }
+    h2  {
+      font-size: 0.6em;
+      margin-bottom: 0.5em;
     }
-  
+  } 
