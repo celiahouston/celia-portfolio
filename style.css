@@ -11,8 +11,6 @@
   }
   
   body {
-    margin: 1em;
-    padding: 2em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
     font-size: 1em;
@@ -37,8 +35,6 @@ nav {
 
 nav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 nav li {
@@ -170,14 +166,14 @@ nav a {
   color: red;
 } 
 
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 768px) {
     h1  {
-      font-size: 1em;
+      font-size: 1.5em;
       margin-bottom: 1em;
     }
     h2  {
-      font-size: 0.7em;
-      margin-bottom: 0.7em;
+      font-size: 1.2em;
+      margin-bottom: 1em;
     }
     .work  {
       margin: 0.5em;
@@ -185,35 +181,46 @@ nav a {
     }
   }
   
-  
-  @media only screen and (max-width: 1000px) {
-    h1 {
-      font-size: 0.8em;
-      margin-bottom: 0.5em;
-    }
-    h2  {
-      font-size: 0.6em;
-      margin-bottom: 0.5em;
-    }
-    .work  {
-      margin: 0.2em;
-      padding: 0.2em;
-    }
-  }
-
     @media only screen and (max-width: 600px) {
     h1 {
-      font-size: 0.8em;
-      margin-bottom: 0.5em;
+      font-size: 1.2em;
+      margin-bottom: 1em;
     }
     h2  {
-      font-size: 0.6em;
-      margin-bottom: 0.5em;
+      font-size: 1em;
+      margin-bottom: 1em;
     } 
       .work  {
-        margin: 0.15em;
-        padding: 0.15em;
+        margin: 0.3em;
+        padding: 0.3em;
       }
     } 
 
-   
+    @media only screen and (max-width: 375px) {
+      h1 {
+        font-size: 0.8em;
+        margin-bottom: 0.8em;
+      }
+      h2  {
+        font-size: 0.7em;
+        margin-bottom: 0.7em;
+      } 
+        .work  {
+          margin: 0;
+          padding: 0;
+          max-height: 2em;
+          max-width: 2em;
+        }
+        .workGridArea {
+          display: block;
+        }
+
+      #workGrid {
+        display: block;
+        overflow: hidden;
+      }
+
+        nav {
+          display: none;
+        }
+      } 

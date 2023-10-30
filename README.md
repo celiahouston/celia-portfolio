@@ -1,7 +1,11 @@
 # Celia Houston Portfolio 
-This is a documentation file for the Unit 2 Challenge: Portfolio project, I completed during my coursework. In this challenge, I built a portfolio page to showcase my skills and talents, which I can continually update as the course progresses. A well-constructed portfolio is an essential tool for job seekers, as it not only highlights your best work but also demonstrates the thought processes behind it. Employers often seek candidates with portfolios that feature deployed web applications, making this project a valuable asset in my career search.
+This webpage documents challenges I have completed during my coursework for the Front-End Web Development bootcamp.
+I have built this portfolio to showcase my skills and talents, which I can continually update as the course progresses. 
+I have used semantic HTML and CSS. I have included CSS Grid layouts, hover elements and media queries for different screen sizes. 
+Within the Screencast link below, I have shown the webpage and the webpage for Samsung Galaxy S8+ (360px x 740px)
 
 ## Screencast 
+https://watch.screencastify.com/v/nAwubez5jFemxfsXDuxl 
 
 ## Screenshot
 
