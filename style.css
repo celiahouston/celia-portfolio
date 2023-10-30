@@ -19,15 +19,6 @@
     background-color: var(--background-colour);
   }
 
-  main {
-    background-color: var(--background-colour);
-    padding: 2em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 1.5;
-    font-size: 1em;
-  }
-  
-  
 header {
     display: flex;
     justify-content: space-between;
@@ -87,21 +78,54 @@ nav a {
   padding: 1em; 
 } 
 
-.work {
-  display: grid; 
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr); 
-  gap: 1em; 
-  max-width: 300px;
+#workGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  grid-template-areas:
+  "firstWork seoWork preworkGuide" 
+  "firstWork deployedSite portfolioRepo" 
+  "firstWork deployedSite portfolioRepo" 
+  ;
+}
+
+.workGridArea { 
+  gap: 1em;  
+  max-width: 350px;
+  max-height: auto; 
   margin: 1em;
   padding: 1em;
   background-color: var(--light-colour1);
   border: 3px dashed var(--dark-colour1);
+  }
+
+#firstWork {
+  grid-area: firstWork;
+  background-image: url(images/GitHubCat.png)
 }
 
-.work.large-box {
-  grid-column: span 2;
-  grid-row: span 2;
+#seoWork {
+  grid-area: seoWork;
+  background-image: url(images/VS-Code-Logo.jpg);
+}
+
+#preworkGuide {
+  grid-area: preworkGuide;
+  background-image: url(images/GitHubOctopus.png);
+}
+
+#deployedSite {
+  grid-area: deployedSite;
+  background-image: url(images/HTML.png);
+}
+
+#portfolioRepo  {
+  grid-area: portfolioRepo;
+  background-image: url(images/computer-image.png);
 }
 
 .work:hover {
@@ -122,13 +146,14 @@ nav a {
   width: auto;
 }
 
-.work h3 {
+.workGrid h3 {
   font-size: 1.3em;
   color: white;
 }
 
-.work p {
-  font-size: 1.2em; 
+.workGrid p {
+  font-size: 1.2em;
+  color: var(--dark-colour2); 
 }
 
 .page-section.contact a:hover {
@@ -156,9 +181,7 @@ nav a {
 
 .contact-list a:hover {
   color: red;
-}
-
-/*
+} 
 
   @media only screen and (max-width: 1000px) {
     #navigation {
@@ -210,4 +233,4 @@ nav a {
       font-size: 0.6em;
       margin-bottom: 0.5em;
     }   
-    */ 
+   
